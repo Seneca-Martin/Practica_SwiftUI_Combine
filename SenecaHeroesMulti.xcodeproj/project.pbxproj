@@ -3,27 +3,58 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		84DC8E9426FDD6B0002515BC /* SenecaHeroesMultiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC8E8126FDD6AE002515BC /* SenecaHeroesMultiApp.swift */; };
 		84DC8E9526FDD6B0002515BC /* SenecaHeroesMultiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC8E8126FDD6AE002515BC /* SenecaHeroesMultiApp.swift */; };
-		84DC8E9626FDD6B0002515BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC8E8226FDD6AE002515BC /* ContentView.swift */; };
-		84DC8E9726FDD6B0002515BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC8E8226FDD6AE002515BC /* ContentView.swift */; };
 		84DC8E9826FDD6B0002515BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84DC8E8326FDD6B0002515BC /* Assets.xcassets */; };
 		84DC8E9926FDD6B0002515BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84DC8E8326FDD6B0002515BC /* Assets.xcassets */; };
+		84DC8EB126FDDD96002515BC /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 84DC8EB026FDDD96002515BC /* KeychainSwift */; };
+		84DC8ED226FEFB8F002515BC /* StatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC8ED126FEFB8F002515BC /* StatusModel.swift */; };
+		84DC8ED326FEFB8F002515BC /* StatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC8ED126FEFB8F002515BC /* StatusModel.swift */; };
+		84DC8ED726FEFEAB002515BC /* BaseNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC8ED626FEFEAB002515BC /* BaseNetwork.swift */; };
+		84DC8ED826FEFEAB002515BC /* BaseNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC8ED626FEFEAB002515BC /* BaseNetwork.swift */; };
+		84DC8EFC2700B616002515BC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC8EFB2700B616002515BC /* MainView.swift */; };
+		84DC8EFD2700B616002515BC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC8EFB2700B616002515BC /* MainView.swift */; };
+		84DC8F092700BFA3002515BC /* HeroListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC8F082700BFA3002515BC /* HeroListView.swift */; };
+		84DC8F0A2700BFA3002515BC /* HeroListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC8F082700BFA3002515BC /* HeroListView.swift */; };
+		84DC8F0E2700C529002515BC /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC8F0D2700C529002515BC /* LoadingView.swift */; };
+		84DC8F0F2700C529002515BC /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC8F0D2700C529002515BC /* LoadingView.swift */; };
+		84DC8F172700C9D7002515BC /* HeroRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC8F162700C9D7002515BC /* HeroRowView.swift */; };
+		84DC8F182700C9D7002515BC /* HeroRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC8F162700C9D7002515BC /* HeroRowView.swift */; };
+		84DC8F1E2700D4AE002515BC /* HerosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC8F1D2700D4AE002515BC /* HerosViewModel.swift */; };
+		84DC8F1F2700D4AE002515BC /* HerosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC8F1D2700D4AE002515BC /* HerosViewModel.swift */; };
+		84DC8F232700D8BC002515BC /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC8F222700D8BC002515BC /* PhotoViewModel.swift */; };
+		84DC8F242700D8BC002515BC /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC8F222700D8BC002515BC /* PhotoViewModel.swift */; };
+		84DC8F282700E26D002515BC /* SeriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC8F272700E26D002515BC /* SeriesListView.swift */; };
+		84DC8F292700E26D002515BC /* SeriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC8F272700E26D002515BC /* SeriesListView.swift */; };
+		84DC8F342700E9D3002515BC /* SeriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC8F332700E9D3002515BC /* SeriesViewModel.swift */; };
+		84DC8F352700E9D3002515BC /* SeriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC8F332700E9D3002515BC /* SeriesViewModel.swift */; };
+		84DC8F392700ECF9002515BC /* SeriesRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC8F382700ECF9002515BC /* SeriesRowView.swift */; };
+		84DC8F3A2700ECF9002515BC /* SeriesRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC8F382700ECF9002515BC /* SeriesRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		84DC8E8126FDD6AE002515BC /* SenecaHeroesMultiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenecaHeroesMultiApp.swift; sourceTree = "<group>"; };
-		84DC8E8226FDD6AE002515BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		84DC8E8326FDD6B0002515BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84DC8E8826FDD6B0002515BC /* SenecaHeroesMulti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SenecaHeroesMulti.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84DC8E8B26FDD6B0002515BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84DC8E9026FDD6B0002515BC /* SenecaHeroesMulti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SenecaHeroesMulti.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84DC8E9226FDD6B0002515BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84DC8E9326FDD6B0002515BC /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		84DC8ED126FEFB8F002515BC /* StatusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusModel.swift; sourceTree = "<group>"; };
+		84DC8ED626FEFEAB002515BC /* BaseNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetwork.swift; sourceTree = "<group>"; };
+		84DC8EFB2700B616002515BC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		84DC8F082700BFA3002515BC /* HeroListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroListView.swift; sourceTree = "<group>"; };
+		84DC8F0D2700C529002515BC /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		84DC8F162700C9D7002515BC /* HeroRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroRowView.swift; sourceTree = "<group>"; };
+		84DC8F1D2700D4AE002515BC /* HerosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosViewModel.swift; sourceTree = "<group>"; };
+		84DC8F222700D8BC002515BC /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
+		84DC8F272700E26D002515BC /* SeriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesListView.swift; sourceTree = "<group>"; };
+		84DC8F332700E9D3002515BC /* SeriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesViewModel.swift; sourceTree = "<group>"; };
+		84DC8F382700ECF9002515BC /* SeriesRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84DC8EB126FDDD96002515BC /* KeychainSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +90,9 @@
 			isa = PBXGroup;
 			children = (
 				84DC8E8126FDD6AE002515BC /* SenecaHeroesMultiApp.swift */,
-				84DC8E8226FDD6AE002515BC /* ContentView.swift */,
+				84DC8EA826FDD779002515BC /* View */,
+				84DC8EA726FDD75E002515BC /* ViewModel */,
+				84DC8EA626FDD73F002515BC /* Models */,
 				84DC8E8326FDD6B0002515BC /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -90,6 +124,62 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
+		84DC8EA626FDD73F002515BC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84DC8ED126FEFB8F002515BC /* StatusModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		84DC8EA726FDD75E002515BC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				84DC8F1D2700D4AE002515BC /* HerosViewModel.swift */,
+				84DC8F332700E9D3002515BC /* SeriesViewModel.swift */,
+				84DC8F222700D8BC002515BC /* PhotoViewModel.swift */,
+				84DC8EA926FDD799002515BC /* Services */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		84DC8EA826FDD779002515BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84DC8EFB2700B616002515BC /* MainView.swift */,
+				84DC8F0D2700C529002515BC /* LoadingView.swift */,
+				84DC8EF62700863F002515BC /* Series */,
+				84DC8EF527007CA1002515BC /* Heros */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84DC8EA926FDD799002515BC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				84DC8ED626FEFEAB002515BC /* BaseNetwork.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		84DC8EF527007CA1002515BC /* Heros */ = {
+			isa = PBXGroup;
+			children = (
+				84DC8F082700BFA3002515BC /* HeroListView.swift */,
+				84DC8F162700C9D7002515BC /* HeroRowView.swift */,
+			);
+			path = Heros;
+			sourceTree = "<group>";
+		};
+		84DC8EF62700863F002515BC /* Series */ = {
+			isa = PBXGroup;
+			children = (
+				84DC8F272700E26D002515BC /* SeriesListView.swift */,
+				84DC8F382700ECF9002515BC /* SeriesRowView.swift */,
+			);
+			path = Series;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,6 +196,9 @@
 			dependencies = (
 			);
 			name = "SenecaHeroesMulti (iOS)";
+			packageProductDependencies = (
+				84DC8EB026FDDD96002515BC /* KeychainSwift */,
+			);
 			productName = "SenecaHeroesMulti (iOS)";
 			productReference = 84DC8E8826FDD6B0002515BC /* SenecaHeroesMulti.app */;
 			productType = "com.apple.product-type.application";
@@ -151,8 +244,12 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 84DC8E7B26FDD6AD002515BC;
+			packageReferences = (
+				84DC8EAF26FDDD96002515BC /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
 			productRefGroup = 84DC8E8926FDD6B0002515BC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -187,8 +284,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84DC8E9626FDD6B0002515BC /* ContentView.swift in Sources */,
+				84DC8ED226FEFB8F002515BC /* StatusModel.swift in Sources */,
+				84DC8EFC2700B616002515BC /* MainView.swift in Sources */,
+				84DC8ED726FEFEAB002515BC /* BaseNetwork.swift in Sources */,
+				84DC8F342700E9D3002515BC /* SeriesViewModel.swift in Sources */,
+				84DC8F282700E26D002515BC /* SeriesListView.swift in Sources */,
+				84DC8F092700BFA3002515BC /* HeroListView.swift in Sources */,
+				84DC8F1E2700D4AE002515BC /* HerosViewModel.swift in Sources */,
+				84DC8F392700ECF9002515BC /* SeriesRowView.swift in Sources */,
+				84DC8F172700C9D7002515BC /* HeroRowView.swift in Sources */,
+				84DC8F0E2700C529002515BC /* LoadingView.swift in Sources */,
 				84DC8E9426FDD6B0002515BC /* SenecaHeroesMultiApp.swift in Sources */,
+				84DC8F232700D8BC002515BC /* PhotoViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,8 +303,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84DC8E9726FDD6B0002515BC /* ContentView.swift in Sources */,
 				84DC8E9526FDD6B0002515BC /* SenecaHeroesMultiApp.swift in Sources */,
+				84DC8EFD2700B616002515BC /* MainView.swift in Sources */,
+				84DC8ED326FEFB8F002515BC /* StatusModel.swift in Sources */,
+				84DC8F352700E9D3002515BC /* SeriesViewModel.swift in Sources */,
+				84DC8F292700E26D002515BC /* SeriesListView.swift in Sources */,
+				84DC8F0A2700BFA3002515BC /* HeroListView.swift in Sources */,
+				84DC8F1F2700D4AE002515BC /* HerosViewModel.swift in Sources */,
+				84DC8F3A2700ECF9002515BC /* SeriesRowView.swift in Sources */,
+				84DC8F182700C9D7002515BC /* HeroRowView.swift in Sources */,
+				84DC8F0F2700C529002515BC /* LoadingView.swift in Sources */,
+				84DC8ED826FEFEAB002515BC /* BaseNetwork.swift in Sources */,
+				84DC8F242700D8BC002515BC /* PhotoViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +556,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		84DC8EAF26FDDD96002515BC /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 19.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		84DC8EB026FDDD96002515BC /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84DC8EAF26FDDD96002515BC /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 84DC8E7C26FDD6AD002515BC /* Project object */;
 }

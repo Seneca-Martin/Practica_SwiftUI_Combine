@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct SenecaHeroesMultiApp: App {
+    @StateObject var viewModelHeros = HerosViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }

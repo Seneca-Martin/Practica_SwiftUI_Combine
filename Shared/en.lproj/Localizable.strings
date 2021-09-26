@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  SenecaHeroesMulti
+
+  Created by seneca on 24/09/2021.
+  
+*/
+// Ponemos palabras en español y su equivalente en ingles
+"Test" = "Test ENG";
+"Tool" = "Tool";
