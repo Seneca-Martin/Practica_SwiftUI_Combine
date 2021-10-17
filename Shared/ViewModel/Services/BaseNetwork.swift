@@ -8,24 +8,24 @@
 import Foundation
 
 //pasamos los parametros
-let server  = "http://gateway.marvel.com" // Dirección de marvel
-let apikey = "b633d994ddfa0a7d6afaacdebfcf75fe" // Api Key
+let server  = "https://gateway.marvel.com" // Dirección de marvel
+let apikey = "1a422b3124a35c3fa2178e96f2b76a86c6ec80a4" // Api Key
 let ts = "1"
-let hash = "8ef7bc7087ff2ba17388e2b557c444db" // hash generado
+let hash = "0af2bbdef1ada227ab40e0fc709e2a99" // hash generado
 
 
 enum endpoins : String {
     case characters = "/v1/public/characters"
+}
+    
+struct HTTPMethods{
+    static let post = "POST"
+    static let get = "GET"
+    static let content = "application/json"
+}
     
     
-    struct HTTPMethods{
-        static let post = "POST"
-        static let get = "GET"
-        static let content = "application/json"
-    }
-    
-    
-    struct BaseNetwork {
+struct BaseNetwork {
         private func getURL(endpoint:String, subPath:String="") -> String {
             var url = server
             
@@ -63,7 +63,4 @@ enum endpoins : String {
             return request
         }
     
-    }
-
-
 }

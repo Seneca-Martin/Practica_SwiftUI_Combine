@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct MainView: View {
-    @EnvironmentObject var viewModel: HerosViewModel
+    @EnvironmentObject var viewModel: HerosViewModel //ya la pilla del App
     
     var body: some View {
+        
         switch viewModel.status {
         case Status.none:
             Text("Estado NONE")
@@ -19,7 +20,7 @@ struct MainView: View {
         case Status.loaded:
             HeroListView()
         case Status.error(error: let errorString):
-            Text("Error: \(errorStrin)")
+            Text("Error: \(errorString)")
         }
     }
 }
@@ -27,5 +28,6 @@ struct MainView: View {
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
+            .environmentObject(HerosViewModel())
     }
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct StatusModel: Codable {
+struct MarvelModel: Codable {
     let code: Int
     let stratus, copyright, attibutioText, attributionHTML: String
     let etag: String
@@ -31,7 +31,7 @@ struct Result: Codable , Identifiable{
 
 struct Thumbnail: Codable {
     let path: String
-    let thumbnailExtension = Extension.self
+    let thumbnailExtension: Extension
     
     enum CodingKeys: String, CodingKey {
         case path

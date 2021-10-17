@@ -32,11 +32,16 @@ struct SeriesRowView: View {
                         .foregroundColor(.black)
                         .bold()
                 }
+            }
                 if let descrip = serie.description{
                     Text("\(descrip)")
                         .foregroundColor(.gray)
                         .font(.body)
-            }
+                }else {
+                    Text("Sin descripcion")
+                        .foregroundColor(.gray)
+                        .font(.body)
+                }
         }
         .padding()
         .background(
@@ -48,14 +53,14 @@ struct SeriesRowView: View {
                 return
             }else {
                 photoViewModel.loadImage(url: serie.thumbnail.getUrlImage(type: .portrait))
+            }
         }
-        
     }
-    
 }
+    
 
 struct SeriesRowView_Previews: PreviewProvider {
     static var previews: some View {
         SeriesRowView(serie: SeriesViewModel().getTestSerie())
+        }
     }
-}

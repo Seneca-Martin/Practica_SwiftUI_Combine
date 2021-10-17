@@ -14,19 +14,23 @@ class PhotoViewModel: ObservableObject{
     var suscriptor = Set<AnyCancellable>()
     
     func loadImage(url:String){
-        let urlDownload = URL(string: url)!
+        
+        let urlDownload = URL(string: url)! //tenemos url
         
         URLSession.shared
             .dataTaskPublisher(for: urlDownload)
-            .map{reponse -> UIImage in
+            .map{response -> UIImage? in
                 UIImage(data: response.data)
+            }
+            .map {image -> Image in
+                Image(uiImage: image!)
             }
             .replaceError(with: Image(systemName: "person.fill"))
             .replaceNil(with: Image(systemName: "person.fill"))
-            .recive(on: DispatchQueue.main)
+            .receive(on: DispatchQueue.main)
             .sink { image in
                 self.photo = image
-                }
+            }
             .store(in: &suscriptor)
     }
 }

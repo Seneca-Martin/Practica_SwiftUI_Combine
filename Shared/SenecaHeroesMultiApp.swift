@@ -14,6 +14,7 @@ struct SenecaHeroesMultiApp: App {
     var body: some Scene {
         WindowGroup {
             MainView()
+                .environmentObject(viewModelHeros)
         }
     }
 }
